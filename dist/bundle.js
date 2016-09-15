@@ -10335,12 +10335,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(5)
-	__vue_script__ = __webpack_require__(9)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/client/components/login.vue: named exports in *.vue files are ignored.")}
+	__webpack_require__(4)
+	__webpack_require__(8)
 	__vue_template__ = __webpack_require__(10)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -10360,24 +10356,23 @@
 	})()}
 
 /***/ },
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(6);
+	var content = __webpack_require__(5);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-45ee60d1&scoped=true!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-45ee60d1&scoped=true!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10387,21 +10382,21 @@
 	}
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "\nh1[_v-45ee60d1] {\n  color: red;\n}\n", "", {"version":3,"sources":["/./src/client/components/login.vue?52c24584"],"names":[],"mappings":";AACA;EACA,WAAA;CACA","file":"login.vue","sourcesContent":["<style scoped>\nh1 {\n  color: red;\n}\n</style>\n\n<template>\n  <div>\n  </div>\n</template>\n\n<script>\nexport default {\n\n}\n</script>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\nbody {\n  background-image: url('/background.jpg');\n  background-repeat: repeat;\n  background-size: 100% 100%;\n  background-attachment: fixed;\n}\n", "", {"version":3,"sources":["/./src/client/components/login.vue?19306a19"],"names":[],"mappings":";AACA;EACA,yCAAA;EACA,0BAAA;EACA,2BAAA;EACA,6BAAA;CACA","file":"login.vue","sourcesContent":["<style>\n  body {\n    background-image: url('/background.jpg');\n    background-repeat: repeat;\n    background-size: 100% 100%;\n    background-attachment: fixed;\n  }\n</style>\n\n<style scope>\n  #login-div {\n    background-color: white;\n    width: 300px;\n    margin-left: 40%;\n    margin-top: 10%;\n  }\n\n  #user-img {\n    margin-top: 25px;\n    margin-left: 120px;\n    width: 60px;\n  }\n\n  #github-img {\n    margin-left: 15px;\n    width: 25px;\n  }\n\n  #submit-btn {\n    margin-left: 95px;\n    color: white;\n    width: 110px;\n    padding: 6px 12px;\n    text-align: center;\n    background-color: #60b044;\n    font-size: 14px;\n    border: 1px solid #d5d5d5;\n    font-weight: 600;\n    border-color: #5ca941;\n  }\n\n  .login-input {\n    margin-top: 5px;\n    margin-bottom: 15px;\n    font-size: 14px;\n    padding: 6px 8px;\n    border: 1px solid #ddd;\n    border-radius: 3px;\n    margin-left: 25%;\n    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);\n  }\n\n  form {\n\n  }\n</style>\n\n<template>\n  <div id=\"login-div\">\n    <form>\n      <div>\n        <img id=\"user-img\" src=\"/user.png\">\n      </div>\n      <div style=\"margin-top: 25px;\">\n        <input class=\"login-input\" placeholder=\"Login Name\"/>\n      </div>\n      <div>\n        <input class=\"login-input\" type=\"password\" placeholder=\"Password\"/>\n      </div>\n      <div>\n        <input type=\"button\" id=\"submit-btn\" value=\"Sign&nbsp;in\"></input>\n      </div>\n    </form>\n    <div>\n      <a>\n        <img id=\"github-img\"src=\"/github.png\"/>\n      </a>\n    </div>\n  </div>\n</template>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	/*
@@ -10457,7 +10452,7 @@
 
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -10679,36 +10674,50 @@
 
 
 /***/ },
-/* 9 */
-/***/ function(module, exports) {
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	// <style scoped>
-	// h1 {
-	//   color: red;
-	// }
-	// </style>
-	//
-	// <template>
-	//   <div>
-	//   </div>
-	// </template>
-	//
-	// <script>
-	exports.default = {};
-	// </script>
+	// load the styles
+	var content = __webpack_require__(9);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=1!./login.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=1!./login.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
 
-	/* generated by vue-loader */
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n#login-div {\n  background-color: white;\n  width: 300px;\n  margin-left: 40%;\n  margin-top: 10%;\n}\n\n#user-img {\n  margin-top: 25px;\n  margin-left: 120px;\n  width: 60px;\n}\n\n#github-img {\n  margin-left: 15px;\n  width: 25px;\n}\n\n#submit-btn {\n  margin-left: 95px;\n  color: white;\n  width: 110px;\n  padding: 6px 12px;\n  text-align: center;\n  background-color: #60b044;\n  font-size: 14px;\n  border: 1px solid #d5d5d5;\n  font-weight: 600;\n  border-color: #5ca941;\n}\n\n.login-input {\n  margin-top: 5px;\n  margin-bottom: 15px;\n  font-size: 14px;\n  padding: 6px 8px;\n  border: 1px solid #ddd;\n  border-radius: 3px;\n  margin-left: 25%;\n  box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);\n}\n\nform {\n\n}\n", "", {"version":3,"sources":["/./src/client/components/login.vue?19306a19"],"names":[],"mappings":";;;;;;;;;;AAUA;EACA,wBAAA;EACA,aAAA;EACA,iBAAA;EACA,gBAAA;CACA;;AAEA;EACA,iBAAA;EACA,mBAAA;EACA,YAAA;CACA;;AAEA;EACA,kBAAA;EACA,YAAA;CACA;;AAEA;EACA,kBAAA;EACA,aAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,0BAAA;EACA,gBAAA;EACA,0BAAA;EACA,iBAAA;EACA,sBAAA;CACA;;AAEA;EACA,gBAAA;EACA,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,8CAAA;CACA;;AAEA;;CAEA","file":"login.vue","sourcesContent":["<style>\n  body {\n    background-image: url('/background.jpg');\n    background-repeat: repeat;\n    background-size: 100% 100%;\n    background-attachment: fixed;\n  }\n</style>\n\n<style scope>\n  #login-div {\n    background-color: white;\n    width: 300px;\n    margin-left: 40%;\n    margin-top: 10%;\n  }\n\n  #user-img {\n    margin-top: 25px;\n    margin-left: 120px;\n    width: 60px;\n  }\n\n  #github-img {\n    margin-left: 15px;\n    width: 25px;\n  }\n\n  #submit-btn {\n    margin-left: 95px;\n    color: white;\n    width: 110px;\n    padding: 6px 12px;\n    text-align: center;\n    background-color: #60b044;\n    font-size: 14px;\n    border: 1px solid #d5d5d5;\n    font-weight: 600;\n    border-color: #5ca941;\n  }\n\n  .login-input {\n    margin-top: 5px;\n    margin-bottom: 15px;\n    font-size: 14px;\n    padding: 6px 8px;\n    border: 1px solid #ddd;\n    border-radius: 3px;\n    margin-left: 25%;\n    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);\n  }\n\n  form {\n\n  }\n</style>\n\n<template>\n  <div id=\"login-div\">\n    <form>\n      <div>\n        <img id=\"user-img\" src=\"/user.png\">\n      </div>\n      <div style=\"margin-top: 25px;\">\n        <input class=\"login-input\" placeholder=\"Login Name\"/>\n      </div>\n      <div>\n        <input class=\"login-input\" type=\"password\" placeholder=\"Password\"/>\n      </div>\n      <div>\n        <input type=\"button\" id=\"submit-btn\" value=\"Sign&nbsp;in\"></input>\n      </div>\n    </form>\n    <div>\n      <a>\n        <img id=\"github-img\"src=\"/github.png\"/>\n      </a>\n    </div>\n  </div>\n</template>\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
 
 /***/ },
 /* 10 */
 /***/ function(module, exports) {
 
-	module.exports = "\n\n\n\n\n\n\n<div _v-45ee60d1=\"\">\n</div>\n";
+	module.exports = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div id=\"login-div\">\n  <form>\n    <div>\n      <img id=\"user-img\" src=\"/user.png\">\n    </div>\n    <div style=\"margin-top: 25px;\">\n      <input class=\"login-input\" placeholder=\"Login Name\"/>\n    </div>\n    <div>\n      <input class=\"login-input\" type=\"password\" placeholder=\"Password\"/>\n    </div>\n    <div>\n      <input type=\"button\" id=\"submit-btn\" value=\"Sign&nbsp;in\"></input>\n    </div>\n  </form>\n  <div>\n    <a>\n      <img id=\"github-img\"src=\"/github.png\"/>\n    </a>\n  </div>\n</div>\n";
 
 /***/ }
 /******/ ]);

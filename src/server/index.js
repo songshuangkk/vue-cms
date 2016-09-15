@@ -13,6 +13,7 @@ const opts = {
 }
 
 app.use(staticCache(path.join(__dirname, '../../dist'), opts))
+app.use(staticCache(path.join(__dirname, '../../static'), opts))
 
 app.use(router.routes())
 

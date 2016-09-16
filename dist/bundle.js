@@ -54,6 +54,10 @@
 	
 	var _login2 = _interopRequireDefault(_login);
 	
+	var _home = __webpack_require__(11);
+	
+	var _home2 = _interopRequireDefault(_home);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	new _vue2.default({
@@ -61,7 +65,7 @@
 	  replace: false,
 	  template: '<Login></Login>',
 	  data: {},
-	  components: { Login: _login2.default }
+	  components: { Login: _login2.default, Home: _home2.default }
 	});
 
 /***/ },
@@ -10718,6 +10722,218 @@
 /***/ function(module, exports) {
 
 	module.exports = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div id=\"login-div\">\n  <form>\n    <div>\n      <img id=\"user-img\" src=\"/user.png\">\n    </div>\n    <div style=\"margin-top: 25px;\">\n      <input class=\"login-input\" placeholder=\"Login Name\"/>\n    </div>\n    <div>\n      <input class=\"login-input\" type=\"password\" placeholder=\"Password\"/>\n    </div>\n    <div>\n      <input type=\"button\" id=\"submit-btn\" value=\"Sign&nbsp;in\"></input>\n    </div>\n  </form>\n  <div>\n    <a>\n      <img id=\"github-img\"src=\"/github.png\"/>\n    </a>\n  </div>\n</div>\n";
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(19)
+	__vue_script__ = __webpack_require__(12)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/client/components/home.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(13)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./home.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _header = __webpack_require__(14);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	  name: 'Home',
+	  data: function data() {
+	    return {};
+	  },
+	
+	  computed: {},
+	  ready: function ready() {},
+	  attached: function attached() {},
+	
+	  methods: {},
+	  components: {
+	    headerTop: _header2.default
+	  }
+	};
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div>\n  <header-top></header-top>\n</div>\n";
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(21)
+	__vue_script__ = __webpack_require__(17)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/client/components/header.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(23)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./header.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 15 */,
+/* 16 */,
+/* 17 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  name: 'Header',
+	  data: function data() {
+	    return {};
+	  },
+	
+	  computed: {},
+	  ready: function ready() {},
+	  attached: function attached() {},
+	
+	  methods: {
+	    isLogin: function isLogin() {
+	      return true;
+	    }
+	  },
+	  components: {}
+	};
+
+/***/ },
+/* 18 */,
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(20);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./home.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./home.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"home.vue","sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(22);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2a6bc03c&scoped=true!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2a6bc03c&scoped=true!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbody[_v-2a6bc03c] {\n  margin: 0 !important;\n  font-family: Lato,sans-serif;\n  background: #f5f5f1;\n  color: #7f8c90;\n  line-height: 1.6em;\n  font-size: 16px;\n}\n\n#header[_v-2a6bc03c] {\n  -ms-flex-preferred-size: 100%;\n      flex-basis: 100%;\n    height: 80px;\n    -ms-flex-item-align: start;\n        align-self: flex-start;\n    background: #3c3e42;\n}\n\n.Navigation__account[_v-2a6bc03c] {\n  display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n        justify-content: flex-end;\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n        flex: 1;\n}\n\nli > div[_v-2a6bc03c] {\n  margin-left: 15px;\n  margin-top: 23px;\n  margin-right: 35px;\n}\n\nli[_v-2a6bc03c] {\n  color: #fff;\n  border: none;\n  font-weight: 500;\n  font-size: 16px;\n\n}\n\n#sign-in-btn[_v-2a6bc03c] {\n  cursor: pointer;\n}\n\n#sign-out-btn[_v-2a6bc03c] {\n  cursor: pointer;\n  background: #60b044;\n  padding: 10px 20px;\n}\n\n#sign-up-btn[_v-2a6bc03c] {\n  background: #ff5c2d;\n  padding: 10px 20px;\n  cursor: pointer;\n}\n\n#system-title[_v-2a6bc03c] {\n  margin-top: 23px;\n  margin-left: 40px;\n  font-size: 30px;\n  float: left;\n  font-family: STKaiti;\n}\n", "", {"version":3,"sources":["/./src/client/components/header.vue?4a5ecbf5"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8CA;EACA,qBAAA;EACA,6BAAA;EACA,oBAAA;EACA,eAAA;EACA,mBAAA;EACA,gBAAA;CACA;;AAEA;EACA,8BAAA;MAAA,iBAAA;IACA,aAAA;IACA,2BAAA;QAAA,uBAAA;IACA,oBAAA;CACA;;AAEA;EACA,qBAAA;IACA,qBAAA;IAAA,cAAA;IACA,iBAAA;IACA,UAAA;IACA,WAAA;IACA,sBAAA;IACA,mBAAA;QAAA,0BAAA;IACA,oBAAA;IACA,YAAA;QAAA,QAAA;CACA;;AAEA;EACA,kBAAA;EACA,iBAAA;EACA,mBAAA;CACA;;AAEA;EACA,YAAA;EACA,aAAA;EACA,iBAAA;EACA,gBAAA;;CAEA;;AAEA;EACA,gBAAA;CACA;;AAEA;EACA,gBAAA;EACA,oBAAA;EACA,mBAAA;CACA;;AAEA;EACA,oBAAA;EACA,mBAAA;EACA,gBAAA;CACA;;AAEA;EACA,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,YAAA;EACA,qBAAA;CACA","file":"header.vue","sourcesContent":["<template lang=\"html\">\n  <div id=\"header\">\n    <div id=\"system-title\">\n      吊炸天的系统\n    </div>\n    <ul class=\"Navigation__account\">\n      <li v-show=\"isLogin()\">\n        <div>\n          <a id=\"sign-in-btn\">Sign In</a>\n        </div>\n      </li>\n      <li v-show=\"isLogin()\">\n        <div>\n          <a id=\"sign-up-btn\">Sign Up</a>\n        </div>\n      </li>\n      <li v-show=\"isLogin()\">\n        <div>\n          <a id=\"sign-out-btn\">Sign Out</a>\n        </div>\n      </li>\n    </ul>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'Header',\n  data() {\n    return {\n    };\n  },\n  computed: {},\n  ready() {},\n  attached() {},\n  methods: {\n    isLogin: function () {\n      // TODO 判断用户是否已经登入\n      return true\n    }\n  },\n  components: {}\n};\n</script>\n\n<style lang=\"css\" scoped>\nbody {\n  margin: 0 !important;\n  font-family: Lato,sans-serif;\n  background: #f5f5f1;\n  color: #7f8c90;\n  line-height: 1.6em;\n  font-size: 16px;\n}\n\n#header {\n  flex-basis: 100%;\n    height: 80px;\n    align-self: flex-start;\n    background: #3c3e42;\n}\n\n.Navigation__account {\n  display: -webkit-box;\n    display: flex;\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    -webkit-box-pack: end;\n    justify-content: flex-end;\n    -webkit-box-flex: 1;\n    flex: 1;\n}\n\nli > div {\n  margin-left: 15px;\n  margin-top: 23px;\n  margin-right: 35px;\n}\n\nli {\n  color: #fff;\n  border: none;\n  font-weight: 500;\n  font-size: 16px;\n\n}\n\n#sign-in-btn {\n  cursor: pointer;\n}\n\n#sign-out-btn {\n  cursor: pointer;\n  background: #60b044;\n  padding: 10px 20px;\n}\n\n#sign-up-btn {\n  background: #ff5c2d;\n  padding: 10px 20px;\n  cursor: pointer;\n}\n\n#system-title {\n  margin-top: 23px;\n  margin-left: 40px;\n  font-size: 30px;\n  float: left;\n  font-family: STKaiti;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 23 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div id=\"header\" _v-2a6bc03c=\"\">\n  <div id=\"system-title\" _v-2a6bc03c=\"\">\n    吊炸天的系统\n  </div>\n  <ul class=\"Navigation__account\" _v-2a6bc03c=\"\">\n    <li v-show=\"isLogin()\" _v-2a6bc03c=\"\">\n      <div _v-2a6bc03c=\"\">\n        <a id=\"sign-in-btn\" _v-2a6bc03c=\"\">Sign In</a>\n      </div>\n    </li>\n    <li v-show=\"isLogin()\" _v-2a6bc03c=\"\">\n      <div _v-2a6bc03c=\"\">\n        <a id=\"sign-up-btn\" _v-2a6bc03c=\"\">Sign Up</a>\n      </div>\n    </li>\n    <li v-show=\"isLogin()\" _v-2a6bc03c=\"\">\n      <div _v-2a6bc03c=\"\">\n        <a id=\"sign-out-btn\" _v-2a6bc03c=\"\">Sign Out</a>\n      </div>\n    </li>\n  </ul>\n</div>\n";
 
 /***/ }
 /******/ ]);

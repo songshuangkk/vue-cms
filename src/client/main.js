@@ -5,7 +5,7 @@ import Home from './components/home.vue'
 new Vue({
   el: 'body',
   replace: false,
-  template: '<Login></Login>',
+  template: '<Home></Home>',
   data: {},
   components: { Login, Home }
 })

@@ -44,14 +44,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-body {
-  margin: 0 !important;
-  font-family: Lato,sans-serif;
-  background: #f5f5f1;
-  color: #7f8c90;
-  line-height: 1.6em;
-  font-size: 16px;
-}
+
 
 #header {
   flex-basis: 100%;

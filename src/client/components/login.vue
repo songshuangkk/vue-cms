@@ -1,13 +1,11 @@
-<style>
-  body {
-    background-image: url('/background.jpg');
-    background-repeat: repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-  }
-</style>
+<style scoped>
+body {
+  background-image: url('/background.jpg');
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
 
-<style scope>
   #login-div {
     background-color: white;
     width: 300px;

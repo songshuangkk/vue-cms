@@ -2,7 +2,7 @@
   <div>
     <header-top></header-top>
     <div>
-      <item v-for="item in items"></item>
+      <item  :interface_list=items ></item>
     </div>
     <pagenation></pagenation>
   </div>
@@ -15,16 +15,20 @@ import PageNation from './pagenation.vue'
 import { input } from 'vue-strap'
 import Request from '../util/request'
 
+
 export default {
   name: 'Home',
   data() {
     return {
-      items: [111, 222, 333, 444]
+      items: ''
     };
   },
   computed: {},
   ready() {
-    Request.doGet('/home/list.json');
+    var self = this;
+    Request.doGet('/home/list.json', (data) => {
+      this.$set('items', data);
+    });
   },
   attached() {},
   methods: {},

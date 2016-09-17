@@ -13,7 +13,7 @@ class Request {
       return value.json()
     })
     .then((value) => {  // get data
-      console.log(value);
+      cb(value.data);
     })
     .catch((err) => {
 

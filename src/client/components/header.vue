@@ -1,7 +1,13 @@
 <template lang="html">
   <div id="header">
     <div id="system-title">
-      吊炸天的系统
+      <div class="system-search">
+        吊炸天的系统
+      </div>
+      <div class="system-search">
+        <input v-if="show" transition="search-transition" type="text" name="name" value="">
+        <img src="/search.svg" v-on:click="show-search"/>
+      </div>
     </div>
     <ul class="Navigation__account">
       <li v-show="isLogin()">
@@ -28,6 +34,7 @@ export default {
   name: 'Header',
   data() {
     return {
+      activity: false
     };
   },
   computed: {},
@@ -37,6 +44,9 @@ export default {
     isLogin: function () {
       // TODO 判断用户是否已经登入
       return true
+    },
+    showSearch: () => {
+      this.activity = true;
     }
   },
   components: {}
@@ -101,5 +111,24 @@ li {
   font-size: 30px;
   float: left;
   font-family: STKaiti;
+  width: 500px;
 }
+
+.system-search {
+  width: 50px;
+  height: 40px;
+  float: left;
+  display: inline;
+  width: 200px;
+}
+
+.system-search > img {
+  width: 50px;
+  height: 50px;
+}
+
+.system-search > input {
+  display: none;
+}
+
 </style>

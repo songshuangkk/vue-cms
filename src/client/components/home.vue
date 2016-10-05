@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 body {
   margin: 0;
   font-family: Lato,sans-serif;
